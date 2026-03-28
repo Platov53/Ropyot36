@@ -1,5 +1,6 @@
 import os
 import webbrowser
+import Ropyot36
 from PIL import Image
 from pysstv.color import Robot36
 
@@ -30,12 +31,15 @@ def encoder():
 """)
     for i, arquivo in enumerate(arquivos):
         print(f"[{i}] {arquivo}")
+    print("[V] Voltar")
     print(">>======================================<<")
 
     while True:
         try:
             
-            selecao = input("Digite o número da imagem: ")
+            selecao = input("Digite o número da imagem: ").lower()
+            if selecao == "v":
+                Ropyot36.menu()
             imagem = arquivos[int(selecao)]
             break
         except (ValueError, IndexError):
