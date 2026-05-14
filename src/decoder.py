@@ -39,7 +39,7 @@ def decoder_sstv():
                     x += 1
 
         img.show()
-        img.save("captura_robot36.png")
+        img.save("audios-saida/captura_robot36.png")
 
     except KeyboardInterrupt:
         pass
