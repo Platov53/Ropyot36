@@ -1,4 +1,5 @@
 import encoder as en
+import decoder as de
 
 def menu():
     while True:
@@ -8,7 +9,7 @@ def menu():
 ||'||''|.                                       .   ____      ||
 || ||   ||    ...   ... ...  .... ...   ...   .||.  ` //   ,/ ||
 || ||''|'   .|  '|.  ||'  ||  '|.  |  .|  '|.  ||    //   //  ||
-|| ||   |.  ||   ||  ||    |   '|.|   ||   ||  ||    \\     ((_-  ||
+|| ||   |.  ||   ||  ||    |   '|.|   ||   ||  ||    \\   ((   ||
 ||.||.  '|'  '|..|'  ||...'     '|     '|..|'  '|.'   )) || ))||
 ||                   ||      .. |                    //  (( ||||
 ||                  ''''      ''                    /'    \// ||
@@ -26,10 +27,10 @@ def menu():
         if escolha == '1':
             en.encoder()
         elif escolha == '2':
-            print("Em Breve")
-        else:
+            de.decoder_sstv()
+        elif escolha == '0':
             print("Encerrando...")
-            break
+            exit()
 
 
 if __name__ == "__main__":
