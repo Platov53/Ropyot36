@@ -12,5 +12,6 @@ git clone https://github.com/Platov53/Ropyot36.git
 ### Linux
 ```bash
 cd Ropyot36
+chmod +x Ropyot36.sh
 ./Ropyot36.sh
 ```

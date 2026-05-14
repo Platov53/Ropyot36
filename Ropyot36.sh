@@ -5,7 +5,7 @@ cd "$SCRIPT_DIR"
 
 source ./venv/bin/activate
 
-pip install -r requeriments.txt
+pip install -r requirements.txt
 
 python3 src/Ropyot36.py
 
